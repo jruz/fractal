@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+}
+.header div {
+  width: 25vw;
+  flex-shrink: 0;
+  font-weight: bold;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom: 2px solid #eee;
+}
+.name {
+  width: 25vw;
+  flex-shrink: 0;
+  background-color: #eee;
+  border: 1px solid #fff;
+}
+.theme {
+  display: flex;
+}
+.subThemes {
+  flex-grow: 1;
+}
+.subTheme {
+  display: flex;
+}
+.categories {
+  flex-grow: 1;
+}
+.category {
+  display: flex;
+}
+.indicators {
+  flex-grow: 1;
+}
+.indicator {
+  background-color: #eee;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+.indicator:hover {
+  background-color: #ddd;
+}
+.selected {
+  background-color: #cecece;
+  border-top-color: #cecece;
+  border-left-color: #cecece;
+  border-right-color: #cecece;
+}
+.indicator.selected:hover {
+  background-color: #cecece;
+  color: #999;
+}

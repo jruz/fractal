@@ -3,28 +3,57 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/async-retry": "^1.2.1",
     "@types/jest": "24.0.5",
     "@types/node": "11.9.4",
+    "@types/qs": "^6.5.1",
     "@types/react": "16.8.3",
     "@types/react-dom": "16.8.1",
+    "@types/react-redux": "^7.0.1",
+    "@typescript-eslint/eslint-plugin": "^1.4.0",
+    "async-retry": "^1.2.3",
+    "axios": "^0.18.0",
+    "eslint-config-prettier": "^4.0.0",
+    "gh-pages": "^2.0.1",
+    "prettier": "^1.16.4",
+    "qs": "^6.6.0",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-redux": "^6.0.0",
     "react-scripts": "2.1.5",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "typescript": "3.3.3"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"**/*.ts\" \"**/*.tsx\"",
+    "predeploy": "yarn build",
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "env": {
+      "browser": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "react-app",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "prettier/@typescript-eslint"
+    ]
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "homepage": "https://jruz.github.io/fractal"
 }
