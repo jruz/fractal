@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "47aa20018e6e32bb94b5",
+    "revision": "d2f5b6372eaad8b63c07",
     "url": "/fractal/static/css/main.bdbd27ad.chunk.css"
   },
   {
-    "revision": "47aa20018e6e32bb94b5",
-    "url": "/fractal/static/js/main.47aa2001.chunk.js"
+    "revision": "d2f5b6372eaad8b63c07",
+    "url": "/fractal/static/js/main.d2f5b637.chunk.js"
   },
   {
     "revision": "5f56758b4254d9a87fa1",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/fractal/static/js/2.8b5ad378.chunk.js"
   },
   {
-    "revision": "c853396641a4b6e7f572d556370e2c74",
+    "revision": "f65fe6858e81387cdfeb0844d6fbdbda",
     "url": "/fractal/index.html"
   }
 ];
