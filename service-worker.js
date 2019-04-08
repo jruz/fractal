@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/fractal/precache-manifest.bffd1fe5ab127c929cb7a91ad907bacb.js"
+  "/fractal/precache-manifest.a46713efa8ffc5b4ef62eaf3aa8eeeca.js"
 );
 
 workbox.clientsClaim();
