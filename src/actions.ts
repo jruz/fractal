@@ -27,6 +27,10 @@ export const setIndicator = (payload: ActiveT) => ({
   payload,
 });
 
+export const navigate = () => ({
+  type: 'NAVIGATE',
+});
+
 export interface ActiveT {
   category: number;
   id: number;
@@ -36,9 +40,11 @@ export interface ActiveT {
 
 export interface ActionT {
   type:
+    | 'NAVIGATE'
     | 'FETCH_FULFILLED'
     | 'FETCH_PENDING'
     | 'FETCH_REJECTED'
+    | 'RESET'
     | 'SET_INDICATOR'
     | 'SET_INDICATORS';
   payload?: any;

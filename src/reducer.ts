@@ -29,6 +29,9 @@ const initialState = {
 
 const Reducer = (state: StateT = initialState, action: ActionT): StateT => {
   switch (action.type) {
+    case 'RESET': {
+      return { ...initialState };
+    }
     case 'FETCH_PENDING': {
       return { ...state, status: 'PENDING' };
     }
@@ -47,10 +50,11 @@ const Reducer = (state: StateT = initialState, action: ActionT): StateT => {
     }
     case 'SET_INDICATORS': {
       const ids = action.payload;
-      const { categories, indicators, subThemes, themes } = getSelectionsClone(
-        state,
-      );
-      // Checks if the indicator ids are on the aux data structre
+      const categories: number[] = [];
+      const indicators = new Set();
+      const subThemes: number[] = [];
+      const themes: number[] = [];
+      // Checks if the indicator ids are on the aux data structure
       if (!isValidIndicator(state, action.payload))
         return { ...state, status: 'NOT_FOUND' };
       // If all of them are valid stores the ids

@@ -8,14 +8,13 @@ const Middleware = (store: StoreT) => (next: Function) => (
   next(action);
   const state = store.getState();
   switch (action.type) {
+    case 'NAVIGATE':
     case 'FETCH_FULFILLED': {
       const args = Qs.parse(window.location.search, {
         ignoreQueryPrefix: true,
       });
-      const ids = args.indicators;
-      if (ids && ids.length > 0) {
-        store.dispatch({ type: 'SET_INDICATORS', payload: ids });
-      }
+      const ids = args.indicators || [];
+      store.dispatch({ type: 'SET_INDICATORS', payload: ids });
       break;
     }
     case 'SET_INDICATOR': {

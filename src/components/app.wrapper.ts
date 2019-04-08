@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import App from './app';
-import { fetch, setIndicator } from '../actions';
+import { fetch, setIndicator, navigate } from '../actions';
 import { StateT } from '../reducer';
 
 export const mapStateToProps = (state: StateT) => state;
@@ -19,6 +19,7 @@ const mapDispatchToProps = (dispatch: Function) => ({
       }),
     );
   },
+  onPopState: () => dispatch(navigate()),
 });
 
 const Wrapper = connect(

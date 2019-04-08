@@ -5,6 +5,7 @@ import Theme from './theme.wrapper';
 class App extends Component<any, any> {
   componentDidMount() {
     this.props.getContent();
+    window.onpopstate = () => this.props.onPopState();
   }
   render() {
     const { data, onClick, status } = this.props;
