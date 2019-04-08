@@ -1,13 +1,13 @@
 {
   "main.css": "/fractal/static/css/main.bdbd27ad.chunk.css",
-  "main.js": "/fractal/static/js/main.d2f5b637.chunk.js",
-  "main.js.map": "/fractal/static/js/main.d2f5b637.chunk.js.map",
-  "runtime~main.js": "/fractal/static/js/runtime~main.5f56758b.js",
-  "runtime~main.js.map": "/fractal/static/js/runtime~main.5f56758b.js.map",
-  "static/js/2.8b5ad378.chunk.js": "/fractal/static/js/2.8b5ad378.chunk.js",
-  "static/js/2.8b5ad378.chunk.js.map": "/fractal/static/js/2.8b5ad378.chunk.js.map",
+  "main.js": "/fractal/static/js/main.03497684.chunk.js",
+  "main.js.map": "/fractal/static/js/main.03497684.chunk.js.map",
+  "runtime~main.js": "/fractal/static/js/runtime~main.27cdf1bb.js",
+  "runtime~main.js.map": "/fractal/static/js/runtime~main.27cdf1bb.js.map",
+  "static/js/2.caa7d0fc.chunk.js": "/fractal/static/js/2.caa7d0fc.chunk.js",
+  "static/js/2.caa7d0fc.chunk.js.map": "/fractal/static/js/2.caa7d0fc.chunk.js.map",
   "index.html": "/fractal/index.html",
-  "precache-manifest.4690d55c3425a48430dffbcf867b631d.js": "/fractal/precache-manifest.4690d55c3425a48430dffbcf867b631d.js",
+  "precache-manifest.bffd1fe5ab127c929cb7a91ad907bacb.js": "/fractal/precache-manifest.bffd1fe5ab127c929cb7a91ad907bacb.js",
   "service-worker.js": "/fractal/service-worker.js",
   "static/css/main.bdbd27ad.chunk.css.map": "/fractal/static/css/main.bdbd27ad.chunk.css.map"
 }
