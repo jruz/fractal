@@ -16,7 +16,7 @@
     "eslint-config-prettier": "^4.0.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.4",
-    "qs": "^6.6.0",
+    "qs": "^6.6.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-redux": "^6.0.0",
